@@ -1,0 +1,2 @@
+docker run -d --rm -p 9000:80 -v ${PWD}/app:/var/www/html --name php84_apache_container php84-apache
+docker run -d --rm -p 9000:80 -v ${PWD}/app:/var/www/html --name php84_xdebug_apache_container php84-xdebug-apache
