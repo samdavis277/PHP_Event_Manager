@@ -1,22 +1,4 @@
 <?php
-/*
-File: `new-event-handler.php` (20%)
-
-Functionality: Accepts and processes data from POST request, ensuring all required fields are submitted and data is validated and the correct data type for the given field. Never trust user input! Generate a unique ID for the event, and append the ID and event data as a new line in the events.txt file. Ensure you validate all input to escape or remove | characters. These are used as separators in the line, therefore they must NOT appear in the content. The user should then be redirect to index.php and a notice stating “Event <NAME> Successfully Created” should be displayed, or similar.
-
-Instructions:
-   - Read the POST data from the form fields: name, description, start, and end.
-   - Validate the data:
-      - Ensure name, start, and end are not empty.
-	  - Ensure the end datetime is after the start datetime.
-      - Use DateTime::createFromFormat() to validate date/time fields.
-      - Sanitize all input data to prevent security issues.
-   - Generate a unique event ID using uniqid().
-   - Remove or escape any | characters in user input to maintain the events.txt file's structure.
-   - Append the new event as a new line in events.txt in the format:
-	 <id>|<name>|<description>|<start>|<end>.
-   - Redirect back to index.php with a success message set via GET attribute.
-*/
 
 session_start();  // Start the session to store error messages and form data
 

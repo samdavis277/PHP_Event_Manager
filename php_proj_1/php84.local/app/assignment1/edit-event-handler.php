@@ -1,20 +1,5 @@
 <?php
-/*
-File: `edit-event-handler.php` (25%)
 
-Functionality: Identical to new-event-handler.php except that, instead of adding a new line to the events.txt file, it locates the existing line based on the event ID and updates the values of the line. You can do this EITHER by updating only modified parts the existing line (preferred) OR by deleting the entire line and adding a new line using the same ID. The user should then be redirect to index.php and a notice stating “Event <NAME> Successfully Edited” should be displayed.
-
-Instructions:
-   - Read the POST data from the form fields: id, name, description, start, and end.
-   - Validate the data:
-      - Ensure name, start, and end are not empty.
-	  - Ensure the end datetime is after the start datetime.
-      - Use DateTime::createFromFormat() to validate date/time fields.
-      - Sanitize all input data to prevent security issues.
-   - Escape any | characters in user input to maintain the events.txt file's structure.
-   - Update the existing event as a new line in events.txt, locating it by using the ID passed in the hidden form field
-   - Redirect back to index.php with a success message set via GET attribute.
-*/
 session_start(); // Start the session to access session variables
 
 function sanitizeInput($input) {

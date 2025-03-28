@@ -1,18 +1,4 @@
 <?php
-/*
-File: `edit-event.php` (10%)
-
-Functionality: This page, linked from the button next to each event on index.php, should accept an event ID via GET attribute, find that row in the events.txt file, and populate the form (including a hidden ID field) with the values of the row. The use can then edit the visible fields of the form and submit via post to edit-event-handler.php.
-
-Instructions:
-   - Retrieve the event ID from the GET parameter.
-   - Gracefully handle a missing or invalid event ID.
-   - Read events.txt and find the matching event using its ID.
-   - Parse the event details and pre-fill the form fields.
-   - Use a hidden input field for the event ID.
-   - Submit the form to edit-event-handler.php using POST.
-*/
-
 
 // Start the session to access session variables
 session_start();

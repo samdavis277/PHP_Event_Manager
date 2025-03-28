@@ -1,14 +1,4 @@
 <?php
-/*
-File: `delete-event.php` (10%)
-
-Functionality: This file should receive an event ID via GET attribute. The PHP should then locate the line in events.txt and delete it, ensuring a blank line is not left in it's place. The user should then be redirect to index.php and a notice stating “Event <NAME> Successfully Deleted” should be displayed.
-
-Instructions:
-   - Retrieve the event ID from the GET parameter.
-   - Find and remove the corresponding event in events.txt.
-   - Redirect back to index.php with a success message.
-*/
 
 if (isset($_GET["EventID"])) {
    $eventIDToDelete = $_GET["EventID"];

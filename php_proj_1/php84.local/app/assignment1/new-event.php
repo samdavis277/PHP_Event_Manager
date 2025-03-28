@@ -1,14 +1,5 @@
 <?php
-/*
-File: `new-event.php` (10%)
-Functionality: This new-event.php file should display a form to create a new event.
 
-The Event Name, Start Date/Time, and End Date/Time should be required while Description should be optional.
-
-The Start Date and Time fields should use a attractive and easy-to-use date and time picker, not require text entry.
-
-The form should submit to `new-event-handler.php` using the POST method.
-*/
 session_start();
 ?>
 

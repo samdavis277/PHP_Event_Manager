@@ -1,19 +1,5 @@
 <?php
-/*
-File: `index.php` (25%)
-Functionality: This index.php file should list all events in events.txt visually grouped as follows:
-   - Past Events: Events where `EndDateTime` is before today, ignoring start time.
-   - This Week: Events within the current week.
-   - Future Events: Events beyond this week.
 
-Instructions:
-   - For each event, list all properties stored in events.txt except the event ID in an attractive HTML table or similar layout. Use Tailwind CSS library for styling your HTML pages for this and all other labs/assignments in this course.
-   - Next to each event, add an edit button that takes the user to edit-event.php and passes the event ID via GET attribute.
-   - Next to the edit button for each event, create a delete button that prompts the user to confirm the deletion via JavaScript, then, if confirmed in the JS confirm(), goes to delete-event.php, passing event ID via get attribute. If the JavaScript prompt is declined do nothing.
-   - Place a new event button at the top or bottom of the list of events that links to new-event.php.
-   - Include a section for a success/error message that is passed via GET attribute. If the message is present, display it in a box at the top of the page as user feedback.
-
-*/
 session_start(); // Start the session to access session variables
 
 // Get events from events.txt
